@@ -1,6 +1,6 @@
 <template>     
    <el-col :span="24">    
-    <el-menu :default-active="activeIndex" class="el-menu-vertical-demo" 
+    <el-menu :default-active="activeIndex"
       text-color="#666"
       active-text-color="#ffd04b"
       router
@@ -119,9 +119,14 @@ export default {
 <!-- 3、样式：解决样式 -->
 <style scoped lang="stylus" rel="stylesheet">
 @import '../../assets/css/index.styl'
+  .el-col{
+    height 100%
+    background $--background-color-skyblue
+  }
   .el-menu{
-    background $--background-color-nav
-   }
+    background $--background-color-skyblue
+    border none
+    }
   .el-menu--collapse {
     width: 80%; 
   }

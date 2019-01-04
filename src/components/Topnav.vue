@@ -3,7 +3,9 @@
   <el-header class="topnav"> 
     <div class="nav" >
       <div class="logo">
-        <h1><router-link to="/" title="天使网首页" class="logo"></router-link></h1>     
+        <h1>
+          <router-link to="/" title="天使记账首页">天使记账</router-link>
+        </h1>     
       </div>      
       <div class="navbox" ref="topnavBox"> 
         <span id="diamond" class="diamond" :style="navStyle" :class="{hidden: active===current}"></span>
@@ -110,7 +112,7 @@ export default {
         { name: "互助", pathTo: "/mutualaid", id:"mutualAidPage"},
         { name: "阅读", pathTo: "/read", id:"read"},
         { name: "娱乐", pathTo: "/amusement", id:"amusement"},
-        { name: "宣管", pathTo: "/dypropaganda", id:"propaganda"}     
+        // { name: "宣管", pathTo: "/dypropaganda", id:"propaganda"}     
       ],
       current: 0,
       active: 0,
@@ -198,15 +200,40 @@ export default {
   padding: 0 50px;  
  } 
  .topnav .nav{
+   background: url('../assets/propaganda/headerthemeimgstwo/top_bg.png') no-repeat;
+  background-size: 100% 100%;
   width: 100%;
+  max-width :1250px;
   height: 100%;
   margin: 0px auto;
   font-size: 16px;
   line-height: $heght--nav;    
+   .logo{
+    width: 150px;
+    height: 100%; 
+    float: left;
+    padding-left: 30px;
+    background: url("../../static/money.png") no-repeat -20px 0;
+    background-size: contain;
+    box-sizing :border-box;
+    h1{
+      margin:0;      
+      a{
+        color :#f3d608;
+        font-weight : bolder;
+        background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#3c60e6), to(rgba(51, 51, 51, 1)));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }  
    & ul>li>a{
       font-size 16px
-      color:#fff;
-      font-weight:bold; 
+      color:#f7ef05;
+      font-weight:bold;
+      background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#f7ef05), to(#fff));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
    }   
      .changesize{
         transition: font 0.5s;
@@ -226,12 +253,7 @@ export default {
       position: relative;
       text-align: center; 
  }
- .logo{
-  width: 250px;
-  height: 100%; 
-  float: left;
-  background: url("../assets/logo.png") no-repeat;
- }  
+
  .navbox{  
   height: 100%;     
   float: left; 

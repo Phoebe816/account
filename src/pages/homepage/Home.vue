@@ -1,17 +1,14 @@
 <!-- 1、模板 -->
 <template>
-  <el-main style="margin-top:40px">    
+  <el-main>    
     <el-container>
-      <el-aside width="150px">
+      <el-aside width="200px" style="padding: 60px 0 0;">
         <homemenu></homemenu>
       </el-aside>
-      <el-main style="padding: 0 100px;">
+      <el-main style="padding: 0 50px;">
         <wagecalculator style="width:800px;"></wagecalculator>
       </el-main>
     </el-container> 
-    
-    <el-container>
-    </el-container>
   </el-main>
 </template>
 <!-- 2、行为：处理逻辑 -->

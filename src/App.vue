@@ -6,7 +6,7 @@
     </template>
     <template v-else-if="$route.meta.homePages">
       <Nav></Nav>
-      <router-view style="margin-top:40px"></router-view>
+      <router-view style="margin-top:50px"></router-view>
       <Footer></Footer>
     </template>  
     <template v-else-if="$route.meta.webapp">

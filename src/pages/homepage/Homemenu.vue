@@ -85,12 +85,6 @@ export default {
             {name:"综艺节目", index2:"amusement"},
            
           ]},
-        { index:"10", navtitle:"游戏天地", classify:[
-            {name:"益智游戏", index2:"10-1"},
-            {name:"棋牌游戏", index2:"10-2"},
-            {name:"网页小游戏", index2:"10-3"},
-           
-          ]},
         { index:"9", navtitle:"天使阅读", classify:[
             {name:"玄幻", index2:"9-1"},
             {name:"科幻", index2:"9-2"},
@@ -122,6 +116,7 @@ export default {
   .el-col{
     height 100%
     background $--background-color-skyblue
+    padding: 30px 0;
   }
   .el-menu{
     background $--background-color-skyblue
@@ -131,8 +126,8 @@ export default {
     width: 80%; 
   }
   .el-menu-item, .el-submenu /deep/ .el-submenu__title{
-    height 48px
-    line-height 48px    
+    height 50px
+    line-height 50px    
   }
   
   .el-submenu /deep/ .el-submenu__icon-arrow{

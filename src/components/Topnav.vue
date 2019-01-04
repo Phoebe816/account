@@ -193,7 +193,7 @@ export default {
 @import '../assets/css/index.styl' 
 .topnav{
   width:100%;   
-  background: linear-gradient(to right, #4b8adc, #8acfee);
+  background: linear-gradient(to right, #4b8adc, #cfe8f3);
   position: fixed;
   top:0px;  
   z-index: 99; 

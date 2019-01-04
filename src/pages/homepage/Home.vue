@@ -5,7 +5,7 @@
       <el-aside width="200px" style="padding: 60px 0 0;">
         <homemenu></homemenu>
       </el-aside>
-      <el-main style="padding: 0 50px;">
+      <el-main class="re-content">
         <wagecalculator style="width:800px;"></wagecalculator>
       </el-main>
     </el-container> 
@@ -37,6 +37,11 @@ export default {
 @import '../../assets/css/index.styl'
 .el-main{
   padding 20px 50px;
+}
+.re-content{
+  margin: 0 50px;
+  padding  0
+  max-width  ($width--max+50)px
 }
 </style>
 
